@@ -1,0 +1,214 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "deno@1.33": {
+      "last_modified": "2023-05-16T04:40:24Z",
+      "resolved": "github:NixOS/nixpkgs/d4825e5e4ac1de7d5bb99381534fd0af3875a26d#deno",
+      "source": "devbox-search",
+      "version": "1.33.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4y53b1vz024109awf1warzgfgh1svhsc-deno-1.33.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4y53b1vz024109awf1warzgfgh1svhsc-deno-1.33.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/iymjpmrjm069fwv8pqdgikj8p7l6vyz7-deno-1.33.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/iymjpmrjm069fwv8pqdgikj8p7l6vyz7-deno-1.33.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hv0zkgk5s6bc3m1xh8yjh2w62ikllv26-deno-1.33.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hv0zkgk5s6bc3m1xh8yjh2w62ikllv26-deno-1.33.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/46g39fwv7qc739dv9l3c83k6xm7pq92q-deno-1.33.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/46g39fwv7qc739dv9l3c83k6xm7pq92q-deno-1.33.3"
+        }
+      }
+    },
+    "php81@latest": {
+      "last_modified": "2024-03-23T13:32:18Z",
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/20bc93ca7b2158ebc99b8cef987a2173a81cde35#php81",
+      "source": "devbox-search",
+      "version": "8.1.27",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pajgnmnm357vpilka853yrj40s15p7v3-php-with-extensions-8.1.27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pajgnmnm357vpilka853yrj40s15p7v3-php-with-extensions-8.1.27"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hjnq0ny8yv6x0bb711llqh39zy80qgvl-php-with-extensions-8.1.27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hjnq0ny8yv6x0bb711llqh39zy80qgvl-php-with-extensions-8.1.27"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kivbhp7jhkajj7i1jn4aryiapwymp54a-php-with-extensions-8.1.27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kivbhp7jhkajj7i1jn4aryiapwymp54a-php-with-extensions-8.1.27"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8jibayj6i4z97n7rwcmb1rgx6lnnf59l-php-with-extensions-8.1.27",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8jibayj6i4z97n7rwcmb1rgx6lnnf59l-php-with-extensions-8.1.27"
+        }
+      }
+    },
+    "php81Extensions.ffi@latest": {
+      "last_modified": "2024-04-02T02:53:36Z",
+      "resolved": "github:NixOS/nixpkgs/080a4a27f206d07724b88da096e27ef63401a504#php81Extensions.ffi",
+      "source": "devbox-search",
+      "version": "8.1.27",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jg5nhinx4fkljrp8wbqf78apr6syqimh-php-ffi-8.1.27",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/4hgld98mij8bs6vcjnqdgj1i62g7gr3r-php-ffi-8.1.27-dev"
+            }
+          ],
+          "store_path": "/nix/store/jg5nhinx4fkljrp8wbqf78apr6syqimh-php-ffi-8.1.27"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/75dngdjp3nj6ms5dffj9qy02dii3rgb1-php-ffi-8.1.27",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/bz8ym5yrjmj2rgj5dcsh2m08d4xnqfk6-php-ffi-8.1.27-dev"
+            }
+          ],
+          "store_path": "/nix/store/75dngdjp3nj6ms5dffj9qy02dii3rgb1-php-ffi-8.1.27"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pla5sgilp8ij40xgd397xvrhppnqllck-php-ffi-8.1.27",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/ry583n94hxcf7116b8xa28jj8py9nn9j-php-ffi-8.1.27-dev"
+            }
+          ],
+          "store_path": "/nix/store/pla5sgilp8ij40xgd397xvrhppnqllck-php-ffi-8.1.27"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fkyb025ax7cjgykw75g3nhibl0z1hm85-php-ffi-8.1.27",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/55bv4gblm45165szzpjax1c0sc7l341c-php-ffi-8.1.27-dev"
+            }
+          ],
+          "store_path": "/nix/store/fkyb025ax7cjgykw75g3nhibl0z1hm85-php-ffi-8.1.27"
+        }
+      }
+    },
+    "php81Packages.composer@latest": {
+      "last_modified": "2024-03-23T13:32:18Z",
+      "resolved": "github:NixOS/nixpkgs/20bc93ca7b2158ebc99b8cef987a2173a81cde35#php81Packages.composer",
+      "source": "devbox-search",
+      "version": "2.7.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jvlrpqb547y0p5nf7qn9bi2pazh7r5j2-composer-2.7.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jvlrpqb547y0p5nf7qn9bi2pazh7r5j2-composer-2.7.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nqvy76kj5wcn43f8pqqs28lf0f1a07kk-composer-2.7.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nqvy76kj5wcn43f8pqqs28lf0f1a07kk-composer-2.7.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x77qxg203wir036dn4lp5j801c8r61p7-composer-2.7.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x77qxg203wir036dn4lp5j801c8r61p7-composer-2.7.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4yiy2dm1wd5mvkqm4r4s2k8ck7ifyzsw-composer-2.7.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4yiy2dm1wd5mvkqm4r4s2k8ck7ifyzsw-composer-2.7.2"
+        }
+      }
+    }
+  }
+}
