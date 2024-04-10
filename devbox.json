@@ -2,8 +2,7 @@
   "packages": [
     "php81@latest",
     "php81Packages.composer@latest",
-    "php81Extensions.ffi@latest",
-    "deno@1.33"
+    "php81Extensions.ffi@latest"
   ],
   "shell": {
     "init_hook": [
