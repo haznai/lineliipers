@@ -5,19 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Image Upload</title>
     </head>
-    <body>
-        <form
-            id="imageUploadForm"
-            action="/upload.php"
-            method="POST"
-            enctype="multipart/form-data"
-        >
-            <input type="file" name="image" required />
-            <button type="submit">Upload Image</button>
-        </form>
-        <img id="originalImage" alt="Original Image" style="display: none" />
-        <img id="receivedImage" alt="Received Image" style="display: none" />
-        <div id="errorDisplay"></div>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-section, .image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #originalImage, #receivedImage {
+        width: 100%;
+        max-width: 400px; /* Resize images */
+        display: block; /* Ensure images are visible to apply styles */
+    }
+    </style>
+    <div class="container">
+        <div class="form-section">
+            <form
+                id="imageUploadForm"
+                action="/upload.php"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+                <input type="file" name="image" required /><br>
+                <label for="Ps">Ps <span id="Ps-value">0.3</span>:</label>
+                <input type="range" id="Ps" name="Ps" min="0" max="1" step="0.01" value="0.3" oninput="document.getElementById('Ps-value').textContent = this.value"><br>
+                <label for="Pm">Pm <span id="Pm-value">0.5</span>:</label>
+                <input type="range" id="Pm" name="Pm" min="0" max="1" step="0.01" value="0.5" oninput="document.getElementById('Pm-value').textContent = this.value"><br>
+                <label for="Ph">Ph <span id="Ph-value">0.8</span>:</label>
+                <input type="range" id="Ph" name="Ph" min="0" max="1" step="0.01" value="0.8" oninput="document.getElementById('Ph-value').textContent = this.value"><br>
+                <label for="S">S <span id="S-value">-15</span>:</label>
+                <input type="range" id="S" name="S" min="-100" max="100" step="1" value="-15" oninput="document.getElementById('S-value').textContent = this.value"><br>
+                <label for="M">M <span id="M-value">-30</span>:</label>
+                <input type="range" id="M" name="M" min="-100" max="100" step="1" value="-30" oninput="document.getElementById('M-value').textContent = this.value"><br>
+                <label for="H">H <span id="H-value">+10</span>:</label>
+                <input type="range" id="H" name="H" min="-100" max="100" step="1" value="10" oninput="document.getElementById('H-value').textContent = this.value">
+            </form>
+            <div id="errorDisplay"></div>
+        </div>
+        <div class="image-section">
+            <label for="originalImage">Original Image</label>
+            <img id="originalImage" alt="Original Image" style="display: none" />
+            <label for="receivedImage">Processed Image</label>
+            <img id="receivedImage" alt="Received Image" style="display: none" />
+        </div>
+    </div>
         <script>
             document.querySelector('input[type="file"]').onchange = async function (
                 event,
@@ -55,7 +92,6 @@
                     console.error("Error occurred:", error);
                 }
             };
-        </script>
         </script>
     </body>
 </html>
