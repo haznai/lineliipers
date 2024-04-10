@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Upload</title>
+    </head>
+    <body>
+        <form
+            id="imageUploadForm"
+            action="/upload.php"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <input type="file" name="image" required />
+            <button type="submit">Upload Image</button>
+        </form>
+        <img id="originalImage" alt="Original Image" style="display: none" />
+        <img id="receivedImage" alt="Received Image" style="display: none" />
+        <div id="errorDisplay"></div>
+        <script>
+            document.querySelector('input[type="file"]').onchange = async function (
+                event,
+            ) {
+                const [file] = event.target.files;
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        document.getElementById("originalImage").src =
+                            e.target.result;
+                        document.getElementById("originalImage").style.display =
+                            "block";
+                    };
+                    reader.readAsDataURL(file);
+                }
+
+                const formData = new FormData(document.getElementById("imageUploadForm"));
+
+                try {
+                    const response = await fetch("/upload.php", {
+                        method: "POST",
+                        body: formData,
+                    });
+                    const data = await response.json();
+
+                    if (data.success && data.url) {
+                        document.getElementById("receivedImage").src = data.url;
+                        document.getElementById("receivedImage").style.display = "block";
+                    } else {
+                        console.error("Upload failed:", data.error);
+                        document.getElementById("receivedImage").style.display = "none";
+                        document.getElementById("errorDisplay").textContent = data.error;
+                    }
+                } catch (error) {
+                    console.error("Error occurred:", error);
+                }
+            };
+        </script>
+        </script>
+    </body>
+</html>
