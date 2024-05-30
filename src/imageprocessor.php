@@ -26,18 +26,6 @@ if (!in_array($fileType, $allowedTypes)) {
     die("Invalid file type.");
 }
 
-// Rename the uploaded file
-$newFileName =
-    $uploadDir .
-    Uniqid("", true) .
-    "." .
-    pathinfo($_FILES["image"]["name"], PATHINFO_EXTENSION);
-
-// Move the file to the upload directory
-if (!move_uploaded_file($_FILES["image"]["tmp_name"], $newFileName)) {
-    die("Failed to save file.");
-}
-
 // ======== Image Processing Begins Here ========
 
 // Initialize Parameters
