@@ -1,5 +1,11 @@
 default:
-	just --list
+      just --list
 
 run:
-    php -S localhost:8000 -t public/
+    DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build -t lineliipers:v1 . --no-cache
+    -docker stop lineliipers
+    -docker rm lineliipers
+    docker run \
+      -v $(pwd):/var/www/html \
+      --name lineliipers \
+      -d lineliipers:v1

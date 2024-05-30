@@ -1,7 +1,7 @@
 {
     "name": "hazn/image_tool",
     "require": {
-        "jcupitt/vips": "^2"
+        "jcupitt/vips": "dev-master"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }

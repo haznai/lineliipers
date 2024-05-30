@@ -1,0 +1,81 @@
+# flyctl launch added from .devbox/.gitignore
+.devbox/**/*
+.devbox/**/.*
+
+# flyctl launch added from .gitignore
+### Created by https://www.gitignore.io
+### Deno ###
+.idea
+.vscode
+
+node_modules
+
+**/.env
+**/*.orig
+**/*.pyc
+**/*.swp
+
+### direnv ###
+**/.direnv
+**/.envrc
+
+### macOS ###
+# General
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+
+# Icon must end with two \r
+**/Icon
+
+# Thumbnails
+**/._*
+
+# Files that might appear in the root of a volume
+**/.DocumentRevisions-V100
+**/.fseventsd
+**/.Spotlight-V100
+**/.TemporaryItems
+**/.Trashes
+**/.VolumeIcon.icns
+**/.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+**/.AppleDB
+**/.AppleDesktop
+**/Network Trash Folder
+**/Temporary Items
+**/.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+**/*.icloud
+
+### devbox
+**/devbox.d
+
+
+### application specific ###
+# don't upload pictures
+public/uploads
+
+
+
+### Created by https://www.gitignore.io
+### Composer ###
+**/composer.phar
+vendor
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+
+# flyctl launch added from vendor/jcupitt/vips/.gitignore
+vendor/jcupitt/vips/**/vendor
+vendor/jcupitt/vips/**/.idea
+vendor/jcupitt/vips/**/composer.lock
+vendor/jcupitt/vips/docs
+vendor/jcupitt/vips/**/*.swp
+vendor/jcupitt/vips/**/.phpunit.result.cache
+fly.toml
