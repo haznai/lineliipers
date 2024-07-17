@@ -29,7 +29,7 @@ $num_of_stripes = 20;
 $angle = (67 * M_PI) / 180; // Convert to radians
 
 // Load the uploaded image
-$input_image = Vips\Image::newFromFile($newFileName, ["access" => "random"]);
+$input_image = Vips\Image::newFromFile($_FILES["image"]["tmp_name"], ["access" => "random"]);
 
 // preprocess image curves
 function preprocess_image(Vips\Image $image)
