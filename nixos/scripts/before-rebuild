@@ -1,5 +1,0 @@
-
-# This script is run before rebuilding the server
-set -euo pipefail
-
-  
