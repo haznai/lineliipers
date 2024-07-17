@@ -1,14 +1,9 @@
 <?php
-header("Content-Type: image/jpeg");
 
 // Assume all necessary libraries are already installed via Composer
 require "../vendor/autoload.php";
 
 use Jcupitt\Vips;
-
-// Directory where uploaded images are saved
-// @todo: delete
-$uploadDir = "uploads/"; // Ensure this directory exists and is writable
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     // Replace this with an appropriate error image or message
@@ -35,8 +30,6 @@ $angle = (67 * M_PI) / 180; // Convert to radians
 
 // Load the uploaded image
 $input_image = Vips\Image::newFromFile($newFileName, ["access" => "random"]);
-
-// Turn image into grayscal$input_image = $input_image->colourspace("b-w");
 
 // preprocess image curves
 function preprocess_image(Vips\Image $image)
@@ -143,6 +136,10 @@ $stripe = $stripe->crop(0, 0, $input_image->width, $input_image->height);
 $temp_image = $input_image->composite($stripe, "colour-dodge");
 
 // ======== Image Processing Ends Here ========
+
+
+// todo: maybe delete this header, is it needed?
+header("Content-Type: image/jpeg");
 
 // Return the processed image directly
 ob_start();
