@@ -1,0 +1,53 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "flyctl@latest": {
+      "last_modified": "2024-05-25T06:46:41Z",
+      "resolved": "github:NixOS/nixpkgs/47e03a624662ce399e55c45a5f6da698fc72c797#flyctl",
+      "source": "devbox-search",
+      "version": "0.2.58",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8d63mykf6azin7wiwf7hvrymflp5l7mk-flyctl-0.2.58",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8d63mykf6azin7wiwf7hvrymflp5l7mk-flyctl-0.2.58"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jp7km4v66m90ks0kyrxq23n1x2r4sdsc-flyctl-0.2.58",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jp7km4v66m90ks0kyrxq23n1x2r4sdsc-flyctl-0.2.58"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qh5kilbabzplbzb6cysharpcmws7hhh8-flyctl-0.2.58",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qh5kilbabzplbzb6cysharpcmws7hhh8-flyctl-0.2.58"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c4rw5p7kyr55jrnzfvrzj38h5xfqiaay-flyctl-0.2.58",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c4rw5p7kyr55jrnzfvrzj38h5xfqiaay-flyctl-0.2.58"
+        }
+      }
+    }
+  }
+}
